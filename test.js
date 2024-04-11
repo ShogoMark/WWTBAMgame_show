@@ -206,9 +206,7 @@ function gameOver() {
 const scoreExit = document.getElementById('scoreExit').querySelector('button');
 scoreExit.onclick = () => {
     gameOverDiv.style.top = -400 + "px";
-    setTimeout(function() {
-        window.location.href = 'home.html';
-    }, 1000);
+    endGame();
 }
 
 function random(array) {
