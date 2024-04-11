@@ -204,10 +204,10 @@ function gameOver() {
 }
 
 const scoreExit = document.getElementById('scoreExit').querySelector('button');
-scoreExit.onclick = () => {
+scoreExit.addEventListener('click', function() {
     gameOverDiv.style.top = -400 + "px";
     window.location.href = "index.html";
-}
+})
 
 function random(array) {
     for (let i = array.length - 1; i > 0; i--) {
