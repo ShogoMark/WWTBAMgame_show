@@ -206,7 +206,7 @@ function gameOver() {
 const scoreExit = document.getElementById('scoreExit').querySelector('button');
 scoreExit.onclick = () => {
     gameOverDiv.style.top = -400 + "px";
-    endGame();
+    window.location.href = "index.html";
 }
 
 function random(array) {
@@ -216,7 +216,6 @@ function random(array) {
     }
     return array;
 }
-
 
 function findHighest(percent) {
     highest = 0;
